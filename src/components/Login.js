@@ -8,11 +8,11 @@ const [password, setPassword] = useState ("")
     return(
         <div class="text-gray-800 text-center antialiased">
             
-                <h1 class="text-2xl font-light">LOGIN</h1> <br />
-                <h2 class="text-center">Sign in to your account</h2>
-                <form class="mt-4 bg-white shadow-md rounded-lg sm">
-                <div class="h-2 bg-indigo-400 rounded-t-md"></div>
-                <div class="px-8 py-6"></div>
+                <h1 class="text-4xl font-light underline text-blue-700 font-mono   ">LOGIN</h1> <br />
+                <form class="mt-4 bg-white shadow-md rounded-lg sm:w-96 mx-auto text-center ">
+                {/* <div class="h-2 bg-indigo-400 rounded-t-md"></div> */}
+                <h2 class="text-center italic hover:not-italic">Sign in to your account</h2>
+                {/* <div class="px-8 py-6"></div> */}
                 <label class="block font-semibold">Username</label>
                 <input 
                 class="border  h-5 px-3 py-5 mt-2 hover:outline-none focus:outline-none focus:ring-1 focus:ring-indigo-400 rounded-md"
@@ -30,8 +30,8 @@ const [password, setPassword] = useState ("")
                 onChange={(e => setPassword(e.target.value))}
                 />
                 <div class="flex justify-between items-baseline">
-                    <button type="submit" class="mt-4 bg-indigo-500 text-white py-2 px-6 rounded-md hover:bg-indigo-600">Login</button>
-                    <a href="#" class="text-sm hover:underline">Forgot password ? </a>
+                    <button type="submit" class="mt-4 bg-indigo-500 text-white py-2 px-4 rounded-md hover:bg-indigo-600">Login</button>
+                    <a href="http://www.ghris.go.ke/passreset.aspx" class="text-sm hover:underline">Forgot password ? </a>
 
                 </div>
                 
