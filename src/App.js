@@ -1,10 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
-import Login from './components/login';
+import React from 'react';
+import Login from './components/Login';
 
 function App() {
   return (
-    <div className="">
+    <div class="bg-gray-200 h-screen">
      <Login />
     </div>
   );
