@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import kinatwa from "./kinatwa.png"
 
 
 function Login () {
@@ -6,18 +7,21 @@ const [number, setNumber] = useState ("")
 const [password, setPassword] = useState ("")
     
     return(
-        <div class="text-gray-800 text-center antialiased">
+        <div class="justify-center">
             
-                <h1 class="text-4xl font-light underline text-blue-700 font-mono   ">LOGIN</h1> <br />
-                <form class="mt-4 bg-white shadow-md rounded-lg sm:w-96 mx-auto text-center ">
+               
+                <form class="p-mt-4 bg-white rounded-lg sm:w-96 mx-auto text-center ">
+                <img src={kinatwa} class=" mx-auto" alt=""/>
                 {/* <div class="h-2 bg-indigo-400 rounded-t-md"></div> */}
-                <h2 class="text-center italic hover:not-italic">Sign in to your account</h2>
+                <h1 class="text-4xl text-black font-serif">LOGIN</h1> <br />
+                <h2 class="text-center text-2xl font-thin">Sign in to your account</h2>
                 {/* <div class="px-8 py-6"></div> */}
-                <label class="block font-semibold">Username</label>
+                <label class="block font-semibold">Phone Number</label>
                 <input 
                 class="border  h-5 px-3 py-5 mt-2 hover:outline-none focus:outline-none focus:ring-1 focus:ring-indigo-400 rounded-md"
-                type="text"
-                placeholder="Name"
+                type="number"
+                maxLength={"10"}
+                placeholder="Phone"
                 value={number}
                 onChange={(e => setNumber(e.target.value))}
                 />
@@ -31,7 +35,7 @@ const [password, setPassword] = useState ("")
                 />
                 <div class="flex justify-between items-baseline">
                     <button type="submit" class="mt-4 bg-indigo-500 text-white py-2 px-4 rounded-md hover:bg-indigo-600">Login</button>
-                    <a href="http://www.ghris.go.ke/passreset.aspx" class="text-sm hover:underline">Forgot password ? </a>
+                    
 
                 </div>
                 
